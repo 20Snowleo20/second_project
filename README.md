@@ -13,5 +13,5 @@
 
 ## Технологии
 &mdash;&nbsp;Использование HTML5
-CSS: один стиль&nbsp;&mdash; `.objects { display: flex; }` &mdash; чтобы расположить карточки в&nbsp;строку
+&mdash;&nbsp;CSS: один стиль&nbsp;&mdash; `.objects { display: flex; }` &mdash; чтобы расположить карточки в&nbsp;строку
 
