@@ -15,3 +15,4 @@
 &mdash;&nbsp;Использование HTML5
 &mdash;&nbsp;CSS: один стиль&nbsp;&mdash; `.objects { display: flex; }` &mdash; чтобы расположить карточки в&nbsp;строку
 
+Ссылка: https://20snowleo20.github.io/second_project/
