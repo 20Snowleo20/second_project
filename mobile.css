@@ -220,4 +220,10 @@
         flex-direction: row;
     }
 
+    .grid-2col-center {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+    }
+
 }
