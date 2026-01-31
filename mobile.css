@@ -5,6 +5,7 @@
 
     .header-mobile {
         display: block;
+
     }
 }
 
@@ -16,10 +17,17 @@
     }
 
 
+
     .menu-toggle {
         display: flex;
-        /* Показываем гамбургер */
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 1100;
     }
+
+    /* Показываем гамбургер */
+
 
     /* Основная навигация (скрыта по умолчанию) */
     .nav {
@@ -36,7 +44,7 @@
         overflow-y: auto;
     }
 
-    
+
 
     .nav.active {
         right: 0;
@@ -135,6 +143,13 @@
         flex-direction: row;
     }
 
+    .scroll-top {
+        width: 52px;
+        height: 52px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 22px;
+    }
 
 }
 
@@ -180,7 +195,7 @@
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     h3 {
@@ -198,11 +213,6 @@
         width: 100%;
     }
 
-
-    body {
-        font-size: 17px;
-        /* iOS рекомендация */
-    }
     .flex-direction-row {
         flex-wrap: wrap;
         gap: 80px 80px;
