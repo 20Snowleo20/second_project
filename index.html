@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Самый вкусный кофе</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
-    <header>
+    <header class="header-desktop">
         <div class="header__h">
             <h1>Рево кофе</h1>
-            <h3>Только ваш кофе</h3>
+            <h2>Только ваш кофе</h2>
             <h2 id="main">Ваш<br>Персональный<br>Кофе</h2>
         </div>
 
@@ -21,32 +22,77 @@
                 <img src="assets/image/icon_tobuy.png" alt="Корзина">
                 <ul>
                     <li>
-                        <a href="#main" class="transition focus-outline link-white">Главная</a>
+                        <a href="#main" class="nav__link transition focus-outline link-white">Главная</a>
                     </li>
                     <li>
-                        <a href="#about" class="transition focus-outline link-white">О нас</a>
+                        <a href="#about" class="nav__link transition focus-outline link-white">О нас</a>
                     </li>
                     <li>
-                        <a href="#binsinpack" class="transition focus-outline link-white">Зерна в упаковках</a>
+                        <a href="#binsinpack" class="nav__link transition focus-outline link-white">Зерна в
+                            упаковках</a>
                     </li>
                     <li>
-                        <a href="#gift" class="transition focus-outline link-white">Подарочный набор</a>
+                        <a href="#gift" class="nav__link transition focus-outline link-white">Подарочный набор</a>
                     </li>
                     <li>
-                        <a href="#giftsets" class="transition focus-outline link-white">Комбо-наборы</a>
+                        <a href="#giftsets" class="nav__link transition focus-outline link-white">Комбо-наборы</a>
                     </li>
                     <li>
-                        <a href="#contacts" class="transition focus-outline link-white">Контакты</a>
+                        <a href="#contacts" class="nav__link transition focus-outline link-white">Контакты</a>
                     </li>
                 </ul>
             </nav>
         </aside>
     </header>
+    <header class="header-mobile lazure-background">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <img src="assets/image/logo.png" alt="Логотип" height="40">
+                </a>
+                <!-- Гамбургер-кнопка (видна на планшетах и мобильных) -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть 
+меню" aria-expanded="false">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+                <!-- Основная навигация -->
+                <nav class="nav" id="mainNav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#main" class="nav__link active">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#binsinpack" class="nav__link">Зерна в упаковках</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#gift" class="nav__link">Подарочный набор</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#giftsets" class="nav__link">Комбо-наборы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contacts" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
 
+            </div>
+        </div>
+        <div>
+            <h1 class="mb-50 text-center">Рево кофе</h1>
+            <h2 class="mb-50 text-center">Только ваш кофе</h2>
+            <h2 class="text-center">Ваш<br>Персональный<br>Кофе</h2>
+        </div>
+    </header>
     <main>
 
 
-        <h2 class="flex-direction-row flex-justify-center mt-150 mb-150" id="about">Этот раздел о&nbsp;нас</h2>
+        <h2 class="flex-direction-row flex-justify-center mt-50 mb-50" id="about">Этот раздел о&nbsp;нас</h2>
         <div class="flex-direction-row flex-justify-space-evenly">
             <article class="transition hover-lift hover-shadow text_column_pad_25 text-center">
                 <img src="assets/icons/coff_store.png" alt="Фото кофейни">
@@ -116,34 +162,34 @@
             </div>
         </section>
 
-        <section class="section-highlight grid grid-2col-center row-gap-30 text-center mb-50" id="gift">
-            <article class = "grid-end-span">
+        <section class="section-highlight grid grid-2col-center row-gap-30 text-center mt-150 mb-150" id="gift">
+            <article class="grid-end-span">
                 <h3>Лучший подарок для друзей</h3>
                 <h2>Подарочный набор!</h2>
             </article>
-            <aside class = "grid-end-span">
+            <aside class="grid-end-span">
                 <img src="assets/image/coff_gift.png" class="hover-grow" alt="Подарочный набор">
             </aside>
-            <div class = "grid-end-span">
+            <div class="grid-end-span">
                 <h3>Хороший подарок хорошим людям</h3>
                 <p>Подарите близким момент настоящего удовольствия.</p>
                 <p>Набор REVO&nbsp;&mdash; это не&nbsp;просто кофе, это утренний ритуал,</p>
                 <p>наполненный ароматом заботы и&nbsp;тепла.</p>
             </div>
             <div class="transition hover-lift hover-shadow">
-                    <img src="assets/icons/coff_logo_icon.png" alt="Кофейные зерна">
-                    <h3>Дневное солнцестояние</h3>
-                    <p>Потрясающий бленд</p>
-                    <button class="active-scale transition focus-outline">Купить</button>
-                    <a href="#" class="transition focus-outline">Подробнее</a>
-                </div>
+                <img src="assets/icons/coff_logo_icon.png" alt="Кофейные зерна">
+                <h3>Дневное солнцестояние</h3>
+                <p>Потрясающий бленд</p>
+                <button class="active-scale transition focus-outline">Купить</button>
+                <a href="#" class="transition focus-outline">Подробнее</a>
+            </div>
             <div class="transition hover-lift hover-shadow">
-                    <img src="assets/icons/IC_Mountain.png" alt="Горы">
-                    <h3>С вершин гор</h3>
-                    <p>700 метров над уровнем моря</p>
-                    <button class="active-scale transition focus-outline">Купить</button>
-                    <a href="#" class="transition focus-outline">Подробнее</a>
-                </div>
+                <img src="assets/icons/IC_Mountain.png" alt="Горы">
+                <h3>С вершин гор</h3>
+                <p>700 метров над уровнем моря</p>
+                <button class="active-scale transition focus-outline">Купить</button>
+                <a href="#" class="transition focus-outline">Подробнее</a>
+            </div>
 
         </section>
         <section id="giftsets">
@@ -184,9 +230,15 @@
             </div>
         </section>
     </main>
-    <footer id="contacts">
-        <p> РЕВО: официальный поставщик кофе&nbsp;&mdash; 2025</p>
+    <footer id="contacts" class="padding-25">
+        <p> РЕВО: <br> Официальный поставщик кофе&nbsp;&mdash; 2025</p>
     </footer>
+    <!-- Кнопка "Наверх" -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        ↑
+    </button>
+    <script src="scripts/menu.js"></script>
+    
 </body>
 
 </html>
