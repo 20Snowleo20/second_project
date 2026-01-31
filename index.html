@@ -10,175 +10,181 @@
 
 <body>
     <header>
-        <h1>Рево кофе</h1>
-        <h3>Только ваш кофе</h3>
-    </header>
+        <div class="header__h">
+            <h1>Рево кофе</h1>
+            <h3>Только ваш кофе</h3>
+            <h2 id="main">Ваш<br>Персональный<br>Кофе</h2>
+        </div>
 
-    <main>
-        <aside>
-            <h2 id = "main">Ваш<br>Персональный<br>Кофе</h2>
-        </aside>
-        <img src="assets/image/Main_image_logo.png" alt="Главное изображение">
-        <aside>
-            <div>
+        <aside class="menu__nav">
+            <nav class="navigation lazure-background">
                 <img src="assets/image/icon_tobuy.png" alt="Корзина">
-            </div>
-            <nav class ="navigation">
                 <ul>
                     <li>
-                        <h2><a href="#main" class="transition focus-outline">Главная</a></h2>
+                        <a href="#main" class="transition focus-outline link-white">Главная</a>
                     </li>
                     <li>
-                        <h2><a href="#about" class="transition focus-outline">О нас</a></h2>
+                        <a href="#about" class="transition focus-outline link-white">О нас</a>
                     </li>
                     <li>
-                        <h2><a href="#binsinpack" class="transition focus-outline">Зерна в упаковках</a></h2>
+                        <a href="#binsinpack" class="transition focus-outline link-white">Зерна в упаковках</a>
                     </li>
                     <li>
-                        <h2><a href="#gift" class="transition focus-outline">Подарочный набор</a></h2>
+                        <a href="#gift" class="transition focus-outline link-white">Подарочный набор</a>
                     </li>
                     <li>
-                        <h2><a href="#giftsets" class="transition focus-outline">Комбо-наборы</a></h2>
+                        <a href="#giftsets" class="transition focus-outline link-white">Комбо-наборы</a>
                     </li>
                     <li>
-                        <h2><a href="#contacts" class="transition focus-outline">Контакты</a></h2>
+                        <a href="#contacts" class="transition focus-outline link-white">Контакты</a>
                     </li>
                 </ul>
             </nav>
         </aside>
-    </main>
-    <h2 class="flex-direction-row flex-justify-center mt-150" id = "about">Этот раздел о&nbsp;нас</h2>
-    <div class="flex-direction-row flex-justify-space-evenly">
-        <article class="transition hover-lift hover-shadow">
-            <img src="assets/icons/coff_store.png" alt="Фото кофейни">
-            <h3>Наш магазин</h3>
-            <p>Кофе&nbsp;&mdash; не&nbsp;обыденность</p>
-            <p>Кофе&nbsp;&mdash; важная традиция</p>
-        </article>
-        <article class="transition hover-lift hover-shadow">
-            <img src="assets/icons/coff_logo.png" alt="Фото вывески">
-            <h3>Наши приоритеты</h3>
-            <p>Ваша улыбка&nbsp;&mdash; наша награда&lt;</p>
-            <p>Растем вместе с&nbsp;вами</p>
-        </article>
-        <article class="transition hover-lift hover-shadow">
-            <img src="assets/icons/coff_cans.png" alt="Фото банок с кофе">
-            <h3>Наш магазин</h3>
-            <p>>Обжариваем самые свежие зерна</p>
-            <p>И&nbsp;делаем стильную упаковку</p>
-        </article>
-        <article class="transition hover-lift hover-shadow">
-            <img src="assets/icons/coff_machine.png" alt="Фото кофеварки">
-            <h3>Помол</h3>
-            <p>Помол зерен любых размеров</p>
-            <p>Подойдет именно вам</p>
-        </article>
-    </div>
+    </header>
 
-    <section class="section-title" id = "binsinpack">
-        <h3 class="flex-direction-row flex-justify-center mt-150">Выбери свой любимый</h3>
-        <h2 class="flex-direction-row flex-justify-center">Эксклюзивно от&nbsp;РЕВО</h2>
-    </section>
-    <section class="flex-direction-row flex-justify-space-evenly">
+    <main>
 
-        <div class="transition hover-lift hover-shadow">
-            <img src="assets/image/b_coff_yellow.png" class="hover-lift" alt="REVO желтый">
-            <p>5000</p>
-            <h3>REVO Утро</h3>
-            <p>100% арабика из&nbsp;Бразилии</p>
-            <button class="active-scale transition focus-outline">Купить</button>
-            <a href="#" class="transition focus-outline">Подробнее</a>
-        </div>
-        <div class="transition hover-lift hover-shadow">
-            <img src="assets/image/b_coff_blue.png" class="hover-lift" alt="REVO синий">
-            <p>3000</p>
-            <h3>REVO Регулярный</h3>
-            <p>100% арабика из&nbsp;Чили</p>
-            <button class="active-scale transition focus-outline">Купить</button>
-            <a href="#" class="transition focus-outline">Подробнее</a>
-        </div>
-    </section>
-    <section class="flex-direction-row flex-justify-space-evenly">
-        <div class="transition hover-lift hover-shadow">
-            <img src="assets/image/b_coff_orange.png" class="hover-lift" alt="REVO оранжевый">
-            <p>4000</p>
-            <h3>REVO Уникальный</h3>
-            <p>90% арабика + 10% робуста</p>
-            <button class="active-scale transition focus-outline">Купить</button>
-            <a href="#" class="transition focus-outline">Подробнее</a>
-        </div>
-        <div class="transition hover-lift hover-shadow">
-            <img src="assets/image/b_coff_brown.png" class="hover-lift" alt="REVO коричневый">
-            <p>4000</p>
-            <h3>REVO Особенный</h3>
-            <p>82% арабика + 18% робуста</p>
-            <button class="active-scale transition focus-outline">Купить</button>
-            <a href="#" class="transition focus-outline">Подробнее</a>
-        </div>
-    </section>
 
-    <section class ="section-highlight" id = "gift">
-        <article>
-            <h3>Лучший подарок для друзей</h3>
-            <h2>Подарочный набор!</h2>
-        </article>
-        <aside>
-            <img src="assets/image/coff_gift.png" class="hover-grow" alt="Подарочный набор">
-        </aside>
-        <div>
-            <h3>Хороший подарок хорошим людям</h3>
-            <p>Подарите близким момент настоящего удовольствия.</p>
-            <p>Набор REVO&nbsp;&mdash; это не&nbsp;просто кофе, это утренний ритуал,</p>
-            <p>наполненный ароматом заботы и&nbsp;тепла.</p>
+        <h2 class="flex-direction-row flex-justify-center mt-150 mb-150" id="about">Этот раздел о&nbsp;нас</h2>
+        <div class="flex-direction-row flex-justify-space-evenly">
+            <article class="transition hover-lift hover-shadow text_column_pad_25 text-center">
+                <img src="assets/icons/coff_store.png" alt="Фото кофейни">
+
+                <h3>Наш магазин</h3>
+                <p>Кофе&nbsp;&mdash; не&nbsp;обыденность</p>
+                <p>Кофе&nbsp;&mdash; важная традиция</p>
+            </article>
+            <article class="transition hover-lift hover-shadow text_column_pad_25 text-center">
+                <img src="assets/icons/coff_logo.png" alt="Фото вывески">
+                <h3>Наши приоритеты</h3>
+                <p>Ваша улыбка&nbsp;&mdash; наша награда</p>
+                <p>Растем вместе с&nbsp;вами</p>
+            </article>
+            <article class="transition hover-lift hover-shadow text_column_pad_25 text-center">
+                <img src="assets/icons/coff_cans.png" alt="Фото банок с кофе">
+                <h3>Наш магазин</h3>
+                <p>Обжариваем самые свежие зерна</p>
+                <p>И&nbsp;делаем стильную упаковку</p>
+            </article>
+            <article class="transition hover-lift hover-shadow text_column_pad_25 text-center">
+                <img src="assets/icons/coff_machine.png" alt="Фото кофеварки">
+                <h3>Помол</h3>
+                <p>Помол зерен любых размеров</p>
+                <p>Подойдет именно вам</p>
+            </article>
         </div>
-        <section class="objects">
-            <div class="transition hover-lift hover-shadow">
-                <img src="assets/icons/coff_logo_icon.png" alt="Кофейные зерна">
-                <h3>Дневное солнцестояние</h3>
-                <p>Потрясающий бленд</p>
-                <button class="active-scale transition focus-outline">Купить</button>
-                <a href="#" class="transition focus-outline">Подробнее</a>
-            </div>
-            <div class="transition hover-lift hover-shadow">
-                <img src="assets/icons/IC_Mountain.png" alt="Горы">
-                <h3>С вершин гор</h3>
-                <p>700 метров над уровнем моря</p>
-                <button class="active-scale transition focus-outline">Купить</button>
-                <a href="#" class="transition focus-outline">Подробнее</a>
-            </div>
+
+        <section class="section-title" id="binsinpack">
+            <h3 class="flex-direction-row flex-justify-center mt-150">Выбери свой любимый</h3>
+            <h2 class="flex-direction-row flex-justify-center">Эксклюзивно от&nbsp;РЕВО</h2>
         </section>
-    </section>
-    <section id ="giftsets">
-        <h3>Выбери свой любимый</h3>
-        <h2>Эксклюзивно от&nbsp;РЕВО: комбо-наборы</h2>
-        <div class="objects">
-            <div class="transition hover-shadow">
-                <img src="assets/image/pro_coff_brown.png" class="hover-grow hover-shadow" alt="REVO коричневый в комбо">
-                <p>7000 <del>9000</del></p>
-                <h3>Комбо REVO Особенный</h3>
-                <p>82% арабика + 18% робуста</p>
+
+        <section class="grid grid-2col-center row-gap-50 mb-50">
+
+            <div class="transition hover-lift hover-shadow">
+                <img src="assets/image/b_coff_yellow.png" class="hover-lift" alt="REVO желтый">
+                <p>5000</p>
+                <h3>REVO Утро</h3>
+                <p>100% арабика из&nbsp;Бразилии</p>
                 <button class="active-scale transition focus-outline">Купить</button>
                 <a href="#" class="transition focus-outline">Подробнее</a>
             </div>
-            <div class="transition hover-shadow">
-                <img src="assets/image/pro_coff_blue.png" class="hover-grow hover-shadow" alt="REVO синий в комбо">
-                <p>6800 <del>11000</del></p>
-                <h3>Комбо REVO Регулярный</h3>
+            <div class="transition hover-lift hover-shadow">
+                <img src="assets/image/b_coff_blue.png" class="hover-lift" alt="REVO синий">
+                <p>3000</p>
+                <h3>REVO Регулярный</h3>
                 <p>100% арабика из&nbsp;Чили</p>
                 <button class="active-scale transition focus-outline">Купить</button>
                 <a href="#" class="transition focus-outline">Подробнее</a>
             </div>
-            <div class="transition hover-shadow">
-                <img src="assets/image/pro_coff_red.png" class="hover-grow hover-shadow" alt="REVO красный в комбо">
-                <p>4000 <del>12000</del></p>
-                <h3> Комбо REVO Медовый</h3>
-                <p>100% арабика из&nbsp;Индонезии</p>
+            <div class="transition hover-lift hover-shadow">
+                <img src="assets/image/b_coff_orange.png" class="hover-lift" alt="REVO оранжевый">
+                <p>4000</p>
+                <h3>REVO Уникальный</h3>
+                <p>90% арабика + 10% робуста</p>
                 <button class="active-scale transition focus-outline">Купить</button>
                 <a href="#" class="transition focus-outline">Подробнее</a>
             </div>
-        </div>
-    </section>
-    <footer id = "contacts">
+            <div class="transition hover-lift hover-shadow">
+                <img src="assets/image/b_coff_brown.png" class="hover-lift" alt="REVO коричневый">
+                <p>4000</p>
+                <h3>REVO Особенный</h3>
+                <p>82% арабика + 18% робуста</p>
+                <button class="active-scale transition focus-outline">Купить</button>
+                <a href="#" class="transition focus-outline">Подробнее</a>
+            </div>
+        </section>
+
+        <section class="section-highlight grid grid-2col-center row-gap-30 text-center mb-50" id="gift">
+            <article class = "grid-end-span">
+                <h3>Лучший подарок для друзей</h3>
+                <h2>Подарочный набор!</h2>
+            </article>
+            <aside class = "grid-end-span">
+                <img src="assets/image/coff_gift.png" class="hover-grow" alt="Подарочный набор">
+            </aside>
+            <div class = "grid-end-span">
+                <h3>Хороший подарок хорошим людям</h3>
+                <p>Подарите близким момент настоящего удовольствия.</p>
+                <p>Набор REVO&nbsp;&mdash; это не&nbsp;просто кофе, это утренний ритуал,</p>
+                <p>наполненный ароматом заботы и&nbsp;тепла.</p>
+            </div>
+            <div class="transition hover-lift hover-shadow">
+                    <img src="assets/icons/coff_logo_icon.png" alt="Кофейные зерна">
+                    <h3>Дневное солнцестояние</h3>
+                    <p>Потрясающий бленд</p>
+                    <button class="active-scale transition focus-outline">Купить</button>
+                    <a href="#" class="transition focus-outline">Подробнее</a>
+                </div>
+            <div class="transition hover-lift hover-shadow">
+                    <img src="assets/icons/IC_Mountain.png" alt="Горы">
+                    <h3>С вершин гор</h3>
+                    <p>700 метров над уровнем моря</p>
+                    <button class="active-scale transition focus-outline">Купить</button>
+                    <a href="#" class="transition focus-outline">Подробнее</a>
+                </div>
+
+        </section>
+        <section id="giftsets">
+            <h3 class="flex-direction-row flex-justify-center mb-50">Выбери свой любимый</h3>
+            <h2 class="flex-direction-row flex-justify-center mb-50">Эксклюзивно от&nbsp;РЕВО: комбо-наборы</h2>
+            <div class="objects">
+                <div class="objects__child transition hover-shadow">
+                    <img src="assets/image/pro_coff_brown.png" class="hover-grow hover-shadow"
+                        alt="REVO коричневый в комбо">
+                    <p>7000 <del>9000</del></p>
+                    <h3>Комбо REVO Особенный</h3>
+                    <p>82% арабика + 18% робуста</p>
+                    <div class="objects__buttons">
+                        <button class="active-scale transition focus-outline">Купить</button>
+                        <a href="#" class="transition focus-outline">Подробнее</a>
+                    </div>
+                </div>
+                <div class="objects__child transition hover-shadow">
+                    <img src="assets/image/pro_coff_blue.png" class="hover-grow hover-shadow" alt="REVO синий в комбо">
+                    <p>6800 <del>11000</del></p>
+                    <h3>Комбо REVO Регулярный</h3>
+                    <p>100% арабика из&nbsp;Чили</p>
+                    <div class="objects__buttons">
+                        <button class="active-scale transition focus-outline">Купить</button>
+                        <a href="#" class="transition focus-outline">Подробнее</a>
+                    </div>
+                </div>
+                <div class="objects__child transition hover-shadow">
+                    <img src="assets/image/pro_coff_red.png" class="hover-grow hover-shadow" alt="REVO красный в комбо">
+                    <p>4000 <del>12000</del></p>
+                    <h3> Комбо REVO Медовый</h3>
+                    <p>100% арабика из&nbsp;Индонезии</p>
+                    <div class="objects__buttons">
+                        <button class="active-scale transition focus-outline">Купить</button>
+                        <a href="#" class="transition focus-outline">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contacts">
         <p> РЕВО: официальный поставщик кофе&nbsp;&mdash; 2025</p>
     </footer>
 </body>

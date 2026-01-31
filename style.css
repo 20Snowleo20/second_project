@@ -13,6 +13,27 @@ font-display: swap;
  body { 
 font-family: 'CustomFont', system-ui, sans-serif; 
 } 
+.grid {
+  display: grid;
+}
+
+.grid-end-span {
+  grid-column-start: 1;
+ grid-column-end: 3;
+}
+
+.grid-2col-center {
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+}
+
+.row-gap-50 {
+  row-gap: 50px;
+}
+.row-gap-30 {
+  row-gap: 30px;
+}
 
 .flex-direction-row {
   display: flex;
@@ -28,14 +49,29 @@ font-family: 'CustomFont', system-ui, sans-serif;
   justify-content: center;
   margin: 50px;
 }
+
 .mt-150 {
   margin-top: 150px;
+
+}
+
+.mt-50 {
+  margin-top: 50px;
+
+}
+.mb-50 {
+  margin-bottom: 50px;
+
 }
 .mb-150 {
   margin-bottom: 150px;
 }
 .flex-justify-space-evenly {
   justify-content: space-evenly;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .hover-lift:hover { 
@@ -73,3 +109,110 @@ color: white;
 border-left: 4px solid #2c5530; 
 padding-left: 1rem; 
 } 
+
+header {
+    display: grid;
+    grid-template-columns: 25vw 75vw ;
+    margin-top: 2rem;
+    align-items: start;
+    justify-items: stretch;
+}
+
+.menu__nav {
+    background-image: url("assets/image/Main_image_logo.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 70vw;
+    display: flex;
+        flex-direction: row-reverse;
+}
+
+.header__h {
+  padding: 5%;
+}
+
+#main {
+  position: absolute;
+  top: 270px;
+  left: 70px;
+}
+
+.lazure-background {
+  background: #26619C;
+  padding: 5%;
+}
+.grid-cols-auto img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; 
+}
+
+.navigation img {
+    float: top; 
+    max-width: 40px; 
+}
+
+.link-white {
+    color: white;
+}
+.link-white:visited {
+    color: purple;
+}
+
+.objects {
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.objects__child {
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.objects__child button {
+  padding: 4px 8px;
+  background-color: #26619C;
+  color: #f8f9fa;
+}
+
+.objects__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+#main {
+  background-color: bisque;
+}
+
+.padding_25 {
+ padding: 100px;
+}
+
+.text_column_pad_25 {
+display: flex;
+flex-direction: column;
+row-gap: 25px;
+}
+
+.text_column_pad_25 img {
+  width: 5vw;
+  height: 5vw;
+  align-self: center;
+}
+.text_column_pad_25 h3 {
+  align-self: center;
+}
+
+footer{
+  margin-top: 50px;
+}
