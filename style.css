@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face { 
 font-family: 'CustomFont'; 
 src: url('assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype'); 
@@ -51,20 +52,20 @@ font-family: 'CustomFont', system-ui, sans-serif;
 }
 
 .mt-150 {
-  margin-top: 150px;
+  margin-top: 15%;
 
 }
 
 .mt-50 {
-  margin-top: 50px;
+  margin-top: 5%;
 
 }
 .mb-50 {
-  margin-bottom: 50px;
+  margin-bottom: 5%;
 
 }
 .mb-150 {
-  margin-bottom: 150px;
+  margin-bottom: 15%;
 }
 .flex-justify-space-evenly {
   justify-content: space-evenly;
@@ -110,7 +111,7 @@ border-left: 4px solid #2c5530;
 padding-left: 1rem; 
 } 
 
-header {
+.header-desktop {
     display: grid;
     grid-template-columns: 25vw 75vw ;
     margin-top: 2rem;
@@ -130,7 +131,9 @@ header {
 .header__h {
   padding: 5%;
 }
-
+.bgcolor-blue {
+  background-color: aquamarine;
+}
 #main {
   position: absolute;
   top: 270px;
@@ -153,10 +156,6 @@ header {
     text-align: left; 
 }
 
-.navigation img {
-    float: top; 
-    max-width: 40px; 
-}
 
 .link-white {
     color: white;
@@ -190,12 +189,9 @@ header {
   gap: 20px;
 }
 
-#main {
-  background-color: bisque;
-}
 
-.padding_25 {
- padding: 100px;
+.padding-25 {
+ padding: 25px;
 }
 
 .text_column_pad_25 {
@@ -216,3 +212,54 @@ row-gap: 25px;
 footer{
   margin-top: 50px;
 }
+
+.nav__link { 
+text-decoration: none; 
+color:  #333; 
+font-weight: 500; 
+font-size: 17px; /* HIG рекомендация */ 
+padding: 8px 16px; 
+border-radius: 6px; 
+transition: all 0.3s ease; 
+}
+@media (min-width: 1025px) {
+.header-mobile {
+  display: none;
+}
+}
+.logo { 
+display: flex; 
+align-items: center; 
+text-decoration: none; 
+} 
+
+.menu-toggle {
+display: none; 
+flex-direction: column; 
+justify-content: space-between; 
+width: 44px; 
+height: 44px; 
+background: transparent; 
+border: none; 
+padding: 12px 10px; 
+cursor: pointer; 
+z-index: 1001; 
+} 
+.menu-toggle__line { 
+width: 100%; 
+height: 3px; 
+background: #333; 
+border-radius: 2px; 
+transition: all 0.3s ease;
+} 
+/* Состояние открытого меню */
+.menu-toggle.active .menu-toggle__line:nth-child(1) { 
+transform: rotate(45deg) translate(6px, 6px); 
+} 
+.menu-toggle.active .menu-toggle__line:nth-child(2) { 
+opacity: 0; 
+} 
+.menu-toggle.active .menu-toggle__line:nth-child(3) { 
+transform: rotate(-45deg) translate(6px, -6px); 
+} 
+
